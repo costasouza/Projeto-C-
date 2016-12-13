@@ -1,0 +1,33 @@
+C:\Users\ricardosouza\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+C:\Users\ricardosouza\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\ricardosouza\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+C:\Users\ricardosouza\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+C:\Users\ricardosouza\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\ricardosouza\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+C:\Users\ricardosouza\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+C:\Users\Ricado\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+C:\Users\Ricado\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+C:\Users\Ricado\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+C:\Users\Ricado\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+C:\Users\Ricado\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\Ricado\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.FrmPrincipal.resources
+C:\Users\Ricado\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\Ricado\Desktop\Dot.Net\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form1.resources
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.FrmPrincipal.resources
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+F:\Projeto c#\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form1.resources
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.FrmPrincipal.resources
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources
+F:\Projeto c#\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
