@@ -320,7 +320,6 @@
             this.Name = "ConsultaModelos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de Modelos";
-            this.Load += new System.EventHandler(this.ConsultaModelos_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.ResumeLayout(false);

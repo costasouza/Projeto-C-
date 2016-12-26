@@ -104,13 +104,15 @@ namespace WindowsFormsApplication3
 
             try
             {
+                // 1 forma de conexao com Banco SQL
+                //string conec = @"Data Source=ricardo;Initial Catalog=Modelo;Integrated Security=True";
+                //SqlConnection cn = new SqlConnection(conec);
+                //cn.Open();
 
-           // string conec = @"Data Source=ricardo\SQL; Initial Catalog=Cadastro; User ID=sa; Password=ricardo; Language=Portuguese";
-            string conec = @"Data Source=RICARDO\SQL;Initial Catalog=Cadastro;Integrated Security=True";
+                // 2 forma de conexao com Banco SQL
+                Conexao conexao = new Conexao ();
+                conexao.conectar ();
 
-            SqlConnection cn = new SqlConnection(conec);
-
-            cn.Open();
 
 
             string sql =  " Insert into CadastroParceiros (RazaoSocial ,CNPJ ,Nome_Responsavel ,Telefone ,Email ,Endereco ,";
@@ -121,7 +123,7 @@ namespace WindowsFormsApplication3
                    sql += " '" + cmbestado.Text  + "', '" + cmbuf.Text  + "') ";
 
                    // 1. Instancia um novo comando com uma consulta e uma conexão
-                   SqlCommand cmd = new SqlCommand(sql, cn);
+                   SqlCommand cmd = new SqlCommand(sql,conexao.cnString);
 
                    // 2. Chama o método ExecuteNonQuery para enviar o comando
                    cmd.ExecuteNonQuery();
@@ -139,6 +141,8 @@ namespace WindowsFormsApplication3
                 MessageBox.Show("Ocorreu algum erro", "Verificar",MessageBoxButtons.OKCancel);
             }
         }
+
+
 
         private void btnsair_Click(object sender, EventArgs e)
         {

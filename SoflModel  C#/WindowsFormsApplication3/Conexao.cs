@@ -9,38 +9,24 @@ namespace WindowsFormsApplication3
 {
     class Conexao
     {
-        private const string conec =  @"Data Source=ricardo\SQL; Initial Catalog=Cadastro; User ID=sa; Password=ricardo; Language=Portuguese";
         
-        SqlConnection objconec = null;
+      public SqlConnection cnString = new SqlConnection();
 
-        #region "Metodo de conexao com o Banco"
+
         public void conectar()
         {
-            
-                objconec.Open();
-                  
+            cnString.ConnectionString = @"Data Source=ricardo;Initial Catalog=Modelo;Integrated Security=True";
+            cnString.Open();
         }
 
-        private bool desconectar()
+        public void desconectar()
         {
-            if (objconec.State != ConnectionState.Closed)
+            if (cnString.State != ConnectionState.Closed)
             {
-                objconec.Close();
-                objconec.Dispose();
-                return true;
+                cnString.Close();
             }
-            else
-            {
-                objconec.Dispose();
-                return false;
-            }
+            
         }
-        #endregion
-
-        #region "Metodo de execução de SQL"
-
-
-        #endregion
-
+       
     }
 }

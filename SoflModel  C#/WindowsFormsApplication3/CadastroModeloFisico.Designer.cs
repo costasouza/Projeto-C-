@@ -63,7 +63,7 @@
             // txtAltura
             // 
             this.txtAltura.Location = new System.Drawing.Point(74, 19);
-            this.txtAltura.Mask = "9,99";
+            this.txtAltura.Mask = "9.99";
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(51, 20);
             this.txtAltura.TabIndex = 1;
@@ -149,7 +149,6 @@
             this.GroupBox1.TabIndex = 25;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Dados Fisicos";
-            
             // 
             // lblalt
             // 

@@ -23,24 +23,25 @@ namespace WindowsFormsApplication3
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
-            /* string conec = @"Data Source=ricardo\SQL; Initial Catalog=Cadastro; User ID=sa; Password=ricardo; Language=Portuguese"; */
-            string conec2 = @"Data Source=RICARDO\SQL;Initial Catalog=Cadastro;Integrated Security=True";
+            // 1 forma de conexao com Banco SQL
+            //string conec2 = @"Data Source=RICARDO\SQL;Initial Catalog=Cadastro;Integrated Security=True";
+            //SqlConnection cn = new SqlConnection(conec2);
+            //cn.Open();
 
-            SqlConnection cn = new SqlConnection(conec2);
-
-            cn.Open();
-
+            // 2 forma
+            Conexao conexao = new Conexao();
+            conexao.conectar();
 
           
 
             string SQL = "Insert into CadastroColaborador (Nome , RG, CPF, Nascimento, Cargo , Profissao , Email,Telefone , Endereco , Numero ,";
                    SQL += "CEP , Cidade , Estado , UF )";
-                   SQL += "values ('" + txtNome.Text + "'," + txtRg.Text + ", " + txtCpf.Text + " , '" + MaskNascimento.Text + "', '" + txtcargo.Text  + "',";
-                   SQL += " '" + txtProfissao.Text + "', '" + txtemail.Text + "', " + MaskTelefone.Text  + ", '" + txtEndereco.Text + "',";
-                   SQL += " " + txtnumero.Text + "," + txtcep.Text + ", '" + txtcidade.Text + "', '" + cmbestado.Text + "', '" + cmbUF.Text + "') ";
+                   SQL += "values ('" + txtNome.Text + "','" + maskedRG.Text + "', '" + maskedCPF.Text + "' , '" + MaskNascimento.Text + "', '" + txtcargo.Text + "',";
+                   SQL += "'" + txtProfissao.Text + "', '" + txtemail.Text + "', '" + maskedTELEFONE.Text + "', '" + txtEndereco.Text + "',";
+                   SQL += "" + txtnumero.Text + ",'" + maskedCEP.Text + "', '" + txtcidade.Text + "', '" + cmbestado.Text + "', '" + cmbUF.Text + "') ";
 
                    // 1. Instancia um novo comando com uma consulta e uma conexão
-                   SqlCommand cmd = new SqlCommand(SQL, cn);
+                   SqlCommand cmd = new SqlCommand(SQL, conexao.cnString);
 
 
                    // 2. Chama o método ExecuteNonQuery para enviar o comando
@@ -49,7 +50,7 @@ namespace WindowsFormsApplication3
 
                    MessageBox.Show("Cadastro efetuado com sucesso");
                    LimparCampos();
-            cn.Close();
+                   conexao.desconectar();
 
 
         }
@@ -141,18 +142,23 @@ namespace WindowsFormsApplication3
         public void LimparCampos()
         {
             txtNome.Text = "";
-            txtRg.Text = "";
-            txtCpf.Text = "";
+            maskedRG.Text = "";
+            maskedCPF.Text = "";
             txtcargo.Text = "";
             txtProfissao.Text = "";
             txtemail.Text = "";
-            MaskTelefone.Text = "__________";
+            maskedTELEFONE.Text = "";
             txtEndereco.Text = "";
             txtnumero.Text = "";
-            txtcep.Text = "";
+            maskedCEP.Text = "";
             txtcidade.Text = "";
             cmbestado.Text = "";
             cmbUF.Text = "";
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
 
     }

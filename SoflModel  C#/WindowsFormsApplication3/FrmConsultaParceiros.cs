@@ -21,17 +21,20 @@ namespace WindowsFormsApplication3
         private void btnconsulta_Click(object sender, EventArgs e)
         {
             //Banco de Dados em SQLServer
-            string conec = @"Data Source=ricardo\SQL; Initial Catalog=Cadastro; User ID=sa; Password=ricardo; Language=Portuguese";
+            // 1 forma
+            //string conec = @"Data Source=ricardo;Initial Catalog=Modelo;Integrated Security=True";
+            //SqlConnection cn = new SqlConnection(conec);
+            //cn.Open();
 
-            SqlConnection cn = new SqlConnection(conec);
-
-            cn.Open();
+            // 2 forma
+            Conexao conexao = new Conexao();
+            conexao.conectar();
 
             string SQL = " Select * from CadastroParceiros where RazaoSocial like '%" + txtRazaoSocial.Text + "%'";
 
 
             //  Instancia um novo comando com uma consulta e uma conexão
-            SqlCommand cmd = new SqlCommand(SQL, cn);
+            SqlCommand cmd = new SqlCommand(SQL, conexao.cnString);
 
             //  Chama o método ExecuteNonQuery para enviar o comando
             cmd.ExecuteNonQuery();
@@ -66,6 +69,7 @@ namespace WindowsFormsApplication3
         private void btnsair_Click(object sender, EventArgs e)
         {
             Close();
+            //Application.Exit();
         }
 
         private void btncancela_Click(object sender, EventArgs e)
@@ -83,6 +87,7 @@ namespace WindowsFormsApplication3
             txtCidade.Text = "";
             comboBoxEstado.Text = "";
             comboBoxUF.Text = "";
+            txtRazaoSocial.Focus();
 
         }
 

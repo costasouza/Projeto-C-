@@ -46,3 +46,19 @@ C:\UNIDADE F PROJETOS\Projeto Venda c#\SoflModel  C#\WindowsFormsApplication3\ob
 C:\UNIDADE F PROJETOS\Projeto Venda c#\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\SoltModel.csproj.GenerateResource.Cache
 C:\UNIDADE F PROJETOS\Projeto Venda c#\SoflModel  C#\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
 C:\UNIDADE F PROJETOS\Projeto Venda c#\SoflModel  C#\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\SoltModel.csprojResolveAssemblyReference.cache
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.CadastroModeloFisico.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.CadastroModelos.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.ConsultaModelos.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.FormSplash.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.FrmCadastroParceiros.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.FrmColaboradores.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.FrmConsultaParceiros.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.FrmPrincipal.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.frmTeste.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\PROJETOS EM DESENVOLVIMENTO\SoflModel  C#\WindowsFormsApplication3\obj\x86\Debug\SoltModel.csproj.GenerateResource.Cache

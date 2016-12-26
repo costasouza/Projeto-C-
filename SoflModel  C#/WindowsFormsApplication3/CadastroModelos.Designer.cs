@@ -154,8 +154,6 @@
             this.maskedCPF.Name = "maskedCPF";
             this.maskedCPF.Size = new System.Drawing.Size(100, 20);
             this.maskedCPF.TabIndex = 4;
-            this.maskedCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedCPF_MaskInputRejected);
-            this.maskedCPF.KeyUp += new System.Windows.Forms.KeyEventHandler(this.maskedCPF_KeyUp);
             // 
             // maskedRG
             // 
@@ -257,7 +255,7 @@
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(71, 13);
             this.Label1.TabIndex = 69;
-            this.Label1.Text = "Complemneto";
+            this.Label1.Text = "Complemento";
             // 
             // comboUF
             // 

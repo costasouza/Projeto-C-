@@ -30,11 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmColaboradores));
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.maskedCEP = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTELEFONE = new System.Windows.Forms.MaskedTextBox();
+            this.maskedCPF = new System.Windows.Forms.MaskedTextBox();
+            this.maskedRG = new System.Windows.Forms.MaskedTextBox();
             this.txtcidade = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
-            this.txtcep = new System.Windows.Forms.MaskedTextBox();
-            this.txtCpf = new System.Windows.Forms.MaskedTextBox();
-            this.txtRg = new System.Windows.Forms.MaskedTextBox();
             this.lblnas = new System.Windows.Forms.Label();
             this.MaskNascimento = new System.Windows.Forms.DateTimePicker();
             this.cmbUF = new System.Windows.Forms.ComboBox();
@@ -60,18 +61,18 @@
             this.lblcar = new System.Windows.Forms.Label();
             this.lblpro = new System.Windows.Forms.Label();
             this.lblem = new System.Windows.Forms.Label();
-            this.MaskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupBox1
             // 
-            this.GroupBox1.Controls.Add(this.MaskTelefone);
+            this.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.GroupBox1.Controls.Add(this.maskedCEP);
+            this.GroupBox1.Controls.Add(this.maskedTELEFONE);
+            this.GroupBox1.Controls.Add(this.maskedCPF);
+            this.GroupBox1.Controls.Add(this.maskedRG);
             this.GroupBox1.Controls.Add(this.txtcidade);
             this.GroupBox1.Controls.Add(this.Label2);
-            this.GroupBox1.Controls.Add(this.txtcep);
-            this.GroupBox1.Controls.Add(this.txtCpf);
-            this.GroupBox1.Controls.Add(this.txtRg);
             this.GroupBox1.Controls.Add(this.lblnas);
             this.GroupBox1.Controls.Add(this.MaskNascimento);
             this.GroupBox1.Controls.Add(this.cmbUF);
@@ -103,13 +104,51 @@
             this.GroupBox1.TabIndex = 21;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Cadastro de Colaboradores";
+            this.GroupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
+            // 
+            // maskedCEP
+            // 
+            this.maskedCEP.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.maskedCEP.Location = new System.Drawing.Point(34, 189);
+            this.maskedCEP.Mask = "00000-000";
+            this.maskedCEP.Name = "maskedCEP";
+            this.maskedCEP.Size = new System.Drawing.Size(69, 20);
+            this.maskedCEP.TabIndex = 11;
+            // 
+            // maskedTELEFONE
+            // 
+            this.maskedTELEFONE.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.maskedTELEFONE.Location = new System.Drawing.Point(321, 123);
+            this.maskedTELEFONE.Mask = "0000-0000";
+            this.maskedTELEFONE.Name = "maskedTELEFONE";
+            this.maskedTELEFONE.Size = new System.Drawing.Size(100, 20);
+            this.maskedTELEFONE.TabIndex = 8;
+            // 
+            // maskedCPF
+            // 
+            this.maskedCPF.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.maskedCPF.Location = new System.Drawing.Point(182, 57);
+            this.maskedCPF.Mask = "000.000.000-00";
+            this.maskedCPF.Name = "maskedCPF";
+            this.maskedCPF.Size = new System.Drawing.Size(100, 20);
+            this.maskedCPF.TabIndex = 3;
+            // 
+            // maskedRG
+            // 
+            this.maskedRG.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.maskedRG.Location = new System.Drawing.Point(50, 58);
+            this.maskedRG.Mask = "00.000.000-00";
+            this.maskedRG.Name = "maskedRG";
+            this.maskedRG.Size = new System.Drawing.Size(91, 20);
+            this.maskedRG.TabIndex = 2;
             // 
             // txtcidade
             // 
+            this.txtcidade.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtcidade.Location = new System.Drawing.Point(150, 192);
             this.txtcidade.Name = "txtcidade";
             this.txtcidade.Size = new System.Drawing.Size(68, 20);
-            this.txtcidade.TabIndex = 13;
+            this.txtcidade.TabIndex = 12;
             // 
             // Label2
             // 
@@ -119,30 +158,6 @@
             this.Label2.Size = new System.Drawing.Size(40, 13);
             this.Label2.TabIndex = 43;
             this.Label2.Text = "Estado";
-            // 
-            // txtcep
-            // 
-            this.txtcep.Location = new System.Drawing.Point(43, 193);
-            this.txtcep.Mask = "99999999";
-            this.txtcep.Name = "txtcep";
-            this.txtcep.Size = new System.Drawing.Size(60, 20);
-            this.txtcep.TabIndex = 12;
-            // 
-            // txtCpf
-            // 
-            this.txtCpf.Location = new System.Drawing.Point(182, 58);
-            this.txtCpf.Mask = "99999999999";
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(100, 20);
-            this.txtCpf.TabIndex = 3;
-            // 
-            // txtRg
-            // 
-            this.txtRg.Location = new System.Drawing.Point(38, 61);
-            this.txtRg.Mask = "9999999999";
-            this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(100, 20);
-            this.txtRg.TabIndex = 2;
             // 
             // lblnas
             // 
@@ -166,19 +181,21 @@
             // 
             // cmbUF
             // 
+            this.cmbUF.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.cmbUF.FormattingEnabled = true;
             this.cmbUF.Location = new System.Drawing.Point(397, 196);
             this.cmbUF.Name = "cmbUF";
             this.cmbUF.Size = new System.Drawing.Size(49, 21);
-            this.cmbUF.TabIndex = 15;
+            this.cmbUF.TabIndex = 14;
             // 
             // cmbestado
             // 
+            this.cmbestado.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.cmbestado.FormattingEnabled = true;
             this.cmbestado.Location = new System.Drawing.Point(266, 193);
             this.cmbestado.Name = "cmbestado";
             this.cmbestado.Size = new System.Drawing.Size(104, 21);
-            this.cmbestado.TabIndex = 14;
+            this.cmbestado.TabIndex = 13;
             // 
             // btnLimpar
             // 
@@ -229,6 +246,7 @@
             // 
             // txtNome
             // 
+            this.txtNome.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtNome.Location = new System.Drawing.Point(50, 26);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(396, 20);
@@ -254,6 +272,7 @@
             // 
             // txtnumero
             // 
+            this.txtnumero.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtnumero.Location = new System.Drawing.Point(255, 159);
             this.txtnumero.Name = "txtnumero";
             this.txtnumero.Size = new System.Drawing.Size(60, 20);
@@ -261,6 +280,7 @@
             // 
             // txtEndereco
             // 
+            this.txtEndereco.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtEndereco.Location = new System.Drawing.Point(68, 159);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(128, 20);
@@ -286,6 +306,7 @@
             // 
             // txtemail
             // 
+            this.txtemail.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtemail.Location = new System.Drawing.Point(50, 127);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(207, 20);
@@ -293,6 +314,7 @@
             // 
             // txtProfissao
             // 
+            this.txtProfissao.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtProfissao.Location = new System.Drawing.Point(242, 92);
             this.txtProfissao.Name = "txtProfissao";
             this.txtProfissao.Size = new System.Drawing.Size(117, 20);
@@ -309,6 +331,7 @@
             // 
             // txtcargo
             // 
+            this.txtcargo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtcargo.Location = new System.Drawing.Point(50, 92);
             this.txtcargo.Name = "txtcargo";
             this.txtcargo.Size = new System.Drawing.Size(127, 20);
@@ -359,19 +382,12 @@
             this.lblem.TabIndex = 5;
             this.lblem.Text = "E-mail:";
             // 
-            // MaskTelefone
-            // 
-            this.MaskTelefone.Location = new System.Drawing.Point(321, 123);
-            this.MaskTelefone.Mask = "9900000000";
-            this.MaskTelefone.Name = "MaskTelefone";
-            this.MaskTelefone.Size = new System.Drawing.Size(125, 20);
-            this.MaskTelefone.TabIndex = 8;
-            // 
             // FrmColaboradores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 281);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(497, 285);
             this.Controls.Add(this.GroupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -390,9 +406,6 @@
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.TextBox txtcidade;
         internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.MaskedTextBox txtcep;
-        internal System.Windows.Forms.MaskedTextBox txtCpf;
-        internal System.Windows.Forms.MaskedTextBox txtRg;
         internal System.Windows.Forms.Label lblnas;
         internal System.Windows.Forms.DateTimePicker MaskNascimento;
         internal System.Windows.Forms.ComboBox cmbUF;
@@ -418,6 +431,9 @@
         internal System.Windows.Forms.Label lblcar;
         internal System.Windows.Forms.Label lblpro;
         internal System.Windows.Forms.Label lblem;
-        private System.Windows.Forms.MaskedTextBox MaskTelefone;
+        internal System.Windows.Forms.MaskedTextBox maskedRG;
+        public System.Windows.Forms.MaskedTextBox maskedCPF;
+        internal System.Windows.Forms.MaskedTextBox maskedTELEFONE;
+        internal System.Windows.Forms.MaskedTextBox maskedCEP;
     }
 }

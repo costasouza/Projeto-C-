@@ -23,20 +23,7 @@ namespace WindowsFormsApplication3
 
         private void CadastroModelos_Load(object sender, EventArgs e)
         {
-            /* Teste de conexao  
-             * 
-            Conexao teste = new Conexao();
-
-            if (teste.conectar())
-            {
-                MessageBox.Show("conectou");
-            }
-            else
-            {
-                MessageBox.Show(" não conectou");
-            }
-             * 
-            */
+           
 
             /// array em c#
             string[] UF;
@@ -110,9 +97,9 @@ namespace WindowsFormsApplication3
                }
 
             for (int i = 0; i < 26; i++)
-            {
-                comboUF.Items.Add(UF[i].ToString());
-            }
+                {
+                    comboUF.Items.Add(UF[i].ToString());
+                }
 
             // ADD VALORES NO COMBOSEXO
             comboSexo.Items.Add ("selecionar");
@@ -130,7 +117,7 @@ namespace WindowsFormsApplication3
                 txtNomeResponsavel.Focus();
 
             }
-            else //if (CheckBoxMenorIdade.Checked == false)
+            else 
             {
                 PanelResponsavel.Visible = false;
             }
@@ -150,11 +137,14 @@ namespace WindowsFormsApplication3
                 }
                
             //Banco de Dados em SQLServer  
-                
-            string conec = @"Data Source=ricardo\SQL; Initial Catalog=Cadastro; User ID=sa; Password=ricardo; Language=Portuguese";
-            SqlConnection cn = new SqlConnection(conec);
+               // 1 forma  
+            //string conec = @"Data Source=ricardo\SQL; Initial Catalog=Cadastro; User ID=sa; Password=ricardo; Language=Portuguese";
+            //SqlConnection cn = new SqlConnection(conec);
+            //cn.Open();
 
-            cn.Open();
+                // 2 forma
+                Conexao conexao = new Conexao();
+                conexao.conectar();
 
             // prepara um comando SQL para incluir dados usando a instrução INSERT INTO
             if (CheckBoxMenorIdade.Checked == true)
@@ -170,16 +160,16 @@ namespace WindowsFormsApplication3
 
                
                 // 1. Instancia um novo comando com uma consulta e uma conexão
-                SqlCommand cmd = new SqlCommand(SQL, cn);
+                        SqlCommand cmd = new SqlCommand(SQL, conexao.cnString);
 
-
+                 
                 // 2. Chama o método ExecuteNonQuery para enviar o comando
                cmd.ExecuteNonQuery();
 
                     
                     MessageBox.Show("Cadastro efetuado com sucesso","Atenção",MessageBoxButtons.OKCancel);
                     LimparCampos();
-                    cn.Close();
+                    conexao.desconectar();
 
 
                     this.Visible = false;
@@ -188,9 +178,7 @@ namespace WindowsFormsApplication3
             
             }
 
-            
-
-            else //if (CheckBoxMenorIdade.Checked == false)
+            else 
             {
 
                 string SQL = @"insert into CadastroModelo (Nome ,Sexo ,RG ,CPF ,Telefone ,Celular ,Email ,Endereco ,Numero ,";
@@ -203,7 +191,7 @@ namespace WindowsFormsApplication3
 
  
                 // 1. Instancia um novo comando com uma consulta e uma conexão
-                SqlCommand cmd = new SqlCommand(SQL, cn);
+                        SqlCommand cmd = new SqlCommand(SQL, conexao.cnString);
 
               
                 // 2. Chama o método ExecuteNonQuery para enviar o comando
@@ -212,7 +200,7 @@ namespace WindowsFormsApplication3
               
                     MessageBox.Show("Cadastro efetuado com sucesso");
                     LimparCampos();
-                    cn.Close();
+                    conexao.desconectar();
 
                     this.Visible = false;
                     CadastroModeloFisico formulario2 = new CadastroModeloFisico();
@@ -317,17 +305,6 @@ namespace WindowsFormsApplication3
         
         }
 
-        private void maskedCPF_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void maskedCPF_KeyUp(object sender, KeyEventArgs e)
-        {
-            
-        }
-
-     
-
+   
     }
 }

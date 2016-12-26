@@ -58,8 +58,8 @@ namespace WindowsFormsApplication3
             {
 
              //Conexao com Banco de Dados em SQLServer
- 
-            string conec = @"Data Source=ricardo\SQL; Initial Catalog=Cadastro; User ID=sa; Password=ricardo; Language=Portuguese";
+
+                string conec = @"Data Source=ricardo;Initial Catalog=Modelo;Integrated Security=True";
             
             SqlConnection cn = new SqlConnection(conec);
 
